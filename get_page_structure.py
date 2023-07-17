@@ -52,7 +52,7 @@ def get_element_dict(element, visited=None):
     else:
         attributes = {}
 
-    if element.tag in ['a', 'p', 'strong', 'i', 'em', 'mark', 'small', 'del', 'ins', 'sub', 'sup', 'span']:
+    if element.tag in ['a', 'p', 'h1', 'h2' ,'h3' , 'h4', 'h5', 'h6', 'strong', 'i', 'em', 'mark', 'small', 'del', 'ins', 'sub', 'sup', 'span']:
         if len(element.text) <= 250:
             seen_text = element.text[:250]
         else:
