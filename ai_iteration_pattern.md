@@ -71,3 +71,47 @@ So the functions needed are:
 - LLM test assumption function
 - Choose CSS  identifier function
 - Webpage scrape function (/)
+
+### Python script to test results of a scrape matches example and output analysis
+If the scrape has correctly worked then it would have extracted information from a list of units of data.
+If not then items will:
+- repeat
+- be missing
+- contain too much information
+- contain too little information
+- be in the wrong order
+- be in the wrong format
+- to few units of data
+- too many units of data
+
+The python script will then analyse the output of the scrape function and return a list of possible problems.
+
+Input:
+SPAN,DIV, P, H, A and tags with attributes and text
+
+### Python script to extract css identifiers from example url
+Write a python script that takes a url and outputs a dictionary (as a json file) of `body`, `span`, `div`, `p`, `h` and  `a` and tags with attributes and text
+that represents the page.
+The dictionary should be structured to represent the structure of the page.
+Ignore other tags such as `script`, `html` and `head` etc
+Also ignore attribute value that is longer than 10 characters.
+Use 
+```python
+session = HTMLSession()
+web_response = session.get(url, headers=headers)
+session.close()
+```
+and extract elements and add to dictionary.
+```python
+all_elements = web_response.html.find('*')
+```
+and for each element in all_elements extract the tag and attributes and text and add to dictionary.
+```python
+each_element = all_elements[0]
+attributes_for_element = each_element.attrs
+text_for_element = each_element.text
+```
+
+
+
+
