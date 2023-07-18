@@ -1,6 +1,6 @@
 import json
 
-# first try with claude
+# first try with claude  ***THIS IS WRONG*** as is not recursive
 
 # Input JSON data
 page_structure_json = ""  # JSON data for page structure

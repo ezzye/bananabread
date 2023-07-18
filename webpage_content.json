@@ -45,7 +45,7 @@
                             "tag": "a",
                             "attributes": {},
                             "text": "here",
-                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&gbv=1&sei=S3e1ZIPBNeSjkdUPxIGZiAg'}",
+                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&gbv=1&sei=S3e1ZIPBNeSjkdUPxIGZiAg",
                             "children": []
                         }
                     ]
@@ -110,7 +110,7 @@
                                 ]
                             },
                             "text": "Accessibility help",
-                            "link": "{'https://support.google.com/websearch/answer/181196?hl=en-GB'}",
+                            "link": "https://support.google.com/websearch/answer/181196?hl=en-GB",
                             "children": []
                         },
                         {
@@ -1737,7 +1737,7 @@
                                                                                         "target": "_blank"
                                                                                     },
                                                                                     "text": "cookies",
-                                                                                    "link": "{'https://policies.google.com/technologies/cookies?utm_source=ucbs&hl=en-GB'}",
+                                                                                    "link": "https://policies.google.com/technologies/cookies?utm_source=ucbs&hl=en-GB",
                                                                                     "children": []
                                                                                 },
                                                                                 {
@@ -2042,7 +2042,7 @@
                                                                         "id": "RP3V5c"
                                                                     },
                                                                     "text": "Privacy",
-                                                                    "link": "{'https://policies.google.com/privacy?hl=en-GB&fg=1&utm_source=ucbs'}",
+                                                                    "link": "https://policies.google.com/privacy?hl=en-GB&fg=1&utm_source=ucbs",
                                                                     "children": []
                                                                 },
                                                                 {
@@ -2066,7 +2066,7 @@
                                                                         "id": "HQ1lb"
                                                                     },
                                                                     "text": "Terms",
-                                                                    "link": "{'https://policies.google.com/terms?hl=en-GB&fg=1&utm_source=ucbs'}",
+                                                                    "link": "https://policies.google.com/terms?hl=en-GB&fg=1&utm_source=ucbs",
                                                                     "children": []
                                                                 }
                                                             ]
@@ -2463,7 +2463,7 @@
                                                                                 "data-hveid": "CAkQAQ"
                                                                             },
                                                                             "text": "Images",
-                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&tbm=isch&sa=X&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ0pQJegQICRAB'}",
+                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&tbm=isch&sa=X&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ0pQJegQICRAB",
                                                                             "children": [
                                                                                 {
                                                                                     "tag": "div",
@@ -2488,7 +2488,7 @@
                                                                                 "data-hveid": "CAwQAQ"
                                                                             },
                                                                             "text": "News",
-                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&tbm=nws&sa=X&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ0pQJegQIDBAB'}",
+                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&tbm=nws&sa=X&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ0pQJegQIDBAB",
                                                                             "children": [
                                                                                 {
                                                                                     "tag": "div",
@@ -2513,7 +2513,7 @@
                                                                                 "data-hveid": "CAsQAQ"
                                                                             },
                                                                             "text": "Videos",
-                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&tbm=vid&sa=X&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ0pQJegQICxAB'}",
+                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&tbm=vid&sa=X&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ0pQJegQICxAB",
                                                                             "children": [
                                                                                 {
                                                                                     "tag": "div",
@@ -2538,7 +2538,7 @@
                                                                                 "data-hveid": "CAoQAQ"
                                                                             },
                                                                             "text": "Maps",
-                                                                            "link": "{'https://maps.google.com/maps?output=search&q=Marc+Bolan+Stoke+Newington&entry=mc&sa=X&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ0pQJegQIChAB'}",
+                                                                            "link": "https://maps.google.com/maps?output=search&q=Marc+Bolan+Stoke+Newington&entry=mc&sa=X&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ0pQJegQIChAB",
                                                                             "children": [
                                                                                 {
                                                                                     "tag": "div",
@@ -2995,7 +2995,7 @@
                                                                                                                         "jsname": "ACyKwe"
                                                                                                                     },
                                                                                                                     "text": "Marc Bolan - N16\nLondon Remembers\nhttps://www.londonremembers.com \u203a memorials \u203a ma...",
-                                                                                                                    "link": "{'https://www.londonremembers.com/memorials/marc-bolan-n16'}",
+                                                                                                                    "link": "https://www.londonremembers.com/memorials/marc-bolan-n16",
                                                                                                                     "children": [
                                                                                                                         {
                                                                                                                             "tag": "br",
@@ -3496,7 +3496,7 @@
                                                                                                                                 "jsname": "ACyKwe"
                                                                                                                             },
                                                                                                                             "text": "Marc Bolan's London House in Hackney: The Early Years\nhangerlondon.com\nhttps://www.hangerlondon.com \u203a marc-bolan-london",
-                                                                                                                            "link": "{'https://www.hangerlondon.com/marc-bolan-london/'}",
+                                                                                                                            "link": "https://www.hangerlondon.com/marc-bolan-london/",
                                                                                                                             "children": [
                                                                                                                                 {
                                                                                                                                     "tag": "br",
@@ -5098,7 +5098,7 @@
                                                                                                                         "jsname": "ACyKwe"
                                                                                                                     },
                                                                                                                     "text": "Marc Bolan London's First Glam-Rock Star\nKnowledgeoflondon.com\nhttp://knowledgeoflondon.com \u203a marcbolan",
-                                                                                                                    "link": "{'http://knowledgeoflondon.com/marcbolan.html'}",
+                                                                                                                    "link": "http://knowledgeoflondon.com/marcbolan.html",
                                                                                                                     "children": [
                                                                                                                         {
                                                                                                                             "tag": "br",
@@ -5592,7 +5592,7 @@
                                                                                                                         "jsname": "ACyKwe"
                                                                                                                     },
                                                                                                                     "text": "Marc Bolan - The Early Years\nMarc Bolan Net\nhttps://www.marc-bolan.net \u203a biography \u203a biography-1",
-                                                                                                                    "link": "{'https://www.marc-bolan.net/biography/biography-1.html'}",
+                                                                                                                    "link": "https://www.marc-bolan.net/biography/biography-1.html",
                                                                                                                     "children": [
                                                                                                                         {
                                                                                                                             "tag": "br",
@@ -6074,7 +6074,7 @@
                                                                                                                         "jsname": "ACyKwe"
                                                                                                                     },
                                                                                                                     "text": "Marc Bolan - N16 | Plaques of London\nPlaques of London\nhttps://www.plaquesoflondon.co.uk \u203a locations \u203a marc...",
-                                                                                                                    "link": "{'https://www.plaquesoflondon.co.uk/locations/marcc-bolan-n16/'}",
+                                                                                                                    "link": "https://www.plaquesoflondon.co.uk/locations/marcc-bolan-n16/",
                                                                                                                     "children": [
                                                                                                                         {
                                                                                                                             "tag": "br",
@@ -6556,7 +6556,7 @@
                                                                                                                         "jsname": "ACyKwe"
                                                                                                                     },
                                                                                                                     "text": "Born to boogie \u2013 a look at Marc Bolan's early life in Hackney\nHackney Citizen\nhttps://www.hackneycitizen.co.uk \u203a 2017/09/15 \u203a mar...",
-                                                                                                                    "link": "{'https://www.hackneycitizen.co.uk/2017/09/15/marc-bolan-hackney-childhood/'}",
+                                                                                                                    "link": "https://www.hackneycitizen.co.uk/2017/09/15/marc-bolan-hackney-childhood/",
                                                                                                                     "children": [
                                                                                                                         {
                                                                                                                             "tag": "br",
@@ -7059,7 +7059,7 @@
                                                                                                                         "jsname": "ACyKwe"
                                                                                                                     },
                                                                                                                     "text": "Marc Bolan lived here - London\nShady Old Lady\nhttps://www.shadyoldlady.com \u203a location",
-                                                                                                                    "link": "{'https://www.shadyoldlady.com/location/1020'}",
+                                                                                                                    "link": "https://www.shadyoldlady.com/location/1020",
                                                                                                                     "children": [
                                                                                                                         {
                                                                                                                             "tag": "br",
@@ -7548,7 +7548,7 @@
                                                                                                                         "jsname": "ACyKwe"
                                                                                                                     },
                                                                                                                     "text": "Marc Bolan's childhood home, Stoke Newington Common\nFlickr\nhttps://www.flickr.com \u203a photos \u203a albedo",
-                                                                                                                    "link": "{'https://www.flickr.com/photos/albedo/263135528'}",
+                                                                                                                    "link": "https://www.flickr.com/photos/albedo/263135528",
                                                                                                                     "children": [
                                                                                                                         {
                                                                                                                             "tag": "br",
@@ -8029,7 +8029,7 @@
                                                                                                                                         "jsname": "ACyKwe"
                                                                                                                                     },
                                                                                                                                     "text": "On this day in 1947, Marc Bolan of T. Rex is born Mark Feld in ...\nFacebook\nhttps://www.facebook.com \u203a ... \u203a Videos",
-                                                                                                                                    "link": "{'https://www.facebook.com/MonstersOfRockOfficial/videos/on-this-day-in-1947-marc-bolan-of-t-rex-is-born-mark-feld-in-stoke-newington-lon/988177001746973/'}",
+                                                                                                                                    "link": "https://www.facebook.com/MonstersOfRockOfficial/videos/on-this-day-in-1947-marc-bolan-of-t-rex-is-born-mark-feld-in-stoke-newington-lon/988177001746973/",
                                                                                                                                     "children": [
                                                                                                                                         {
                                                                                                                                             "tag": "br",
@@ -8397,7 +8397,7 @@
                                                                                                                             "tag": "a",
                                                                                                                             "attributes": {},
                                                                                                                             "text": "0:06",
-                                                                                                                            "link": "{'https://www.facebook.com/MonstersOfRockOfficial/videos/on-this-day-in-1947-marc-bolan-of-t-rex-is-born-mark-feld-in-stoke-newington-lon/988177001746973/'}",
+                                                                                                                            "link": "https://www.facebook.com/MonstersOfRockOfficial/videos/on-this-day-in-1947-marc-bolan-of-t-rex-is-born-mark-feld-in-stoke-newington-lon/988177001746973/",
                                                                                                                             "children": [
                                                                                                                                 {
                                                                                                                                     "tag": "div",
@@ -8709,7 +8709,7 @@
                                                                                                                                                 "jsname": "ACyKwe"
                                                                                                                                             },
                                                                                                                                             "text": "A short trip to Stoke Newington Common, with \"Change\" of ...\nYouTube\nhttps://www.youtube.com \u203a watch",
-                                                                                                                                            "link": "{'https://www.youtube.com/watch?v=9ljW4FH4-gg'}",
+                                                                                                                                            "link": "https://www.youtube.com/watch?v=9ljW4FH4-gg",
                                                                                                                                             "children": [
                                                                                                                                                 {
                                                                                                                                                     "tag": "br",
@@ -9078,7 +9078,7 @@
                                                                                                                                     "tag": "a",
                                                                                                                                     "attributes": {},
                                                                                                                                     "text": "3:35",
-                                                                                                                                    "link": "{'https://www.youtube.com/watch?v=9ljW4FH4-gg'}",
+                                                                                                                                    "link": "https://www.youtube.com/watch?v=9ljW4FH4-gg",
                                                                                                                                     "children": [
                                                                                                                                         {
                                                                                                                                             "tag": "div",
@@ -9846,7 +9846,7 @@
                                                                                                 ]
                                                                                             },
                                                                                             "text": "Learn more",
-                                                                                            "link": "{'https://www.google.com/policies/faq'}",
+                                                                                            "link": "https://www.google.com/policies/faq",
                                                                                             "children": []
                                                                                         }
                                                                                     ]
@@ -9966,7 +9966,7 @@
                                                                                                 ]
                                                                                             },
                                                                                             "text": "2",
-                                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=10&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAG'}",
+                                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=10&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAG",
                                                                                             "children": [
                                                                                                 {
                                                                                                     "tag": "span",
@@ -9999,7 +9999,7 @@
                                                                                                 ]
                                                                                             },
                                                                                             "text": "3",
-                                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=20&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAI'}",
+                                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=20&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAI",
                                                                                             "children": [
                                                                                                 {
                                                                                                     "tag": "span",
@@ -10032,7 +10032,7 @@
                                                                                                 ]
                                                                                             },
                                                                                             "text": "4",
-                                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=30&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAK'}",
+                                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=30&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAK",
                                                                                             "children": [
                                                                                                 {
                                                                                                     "tag": "span",
@@ -10065,7 +10065,7 @@
                                                                                                 ]
                                                                                             },
                                                                                             "text": "5",
-                                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=40&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAM'}",
+                                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=40&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAM",
                                                                                             "children": [
                                                                                                 {
                                                                                                     "tag": "span",
@@ -10098,7 +10098,7 @@
                                                                                                 ]
                                                                                             },
                                                                                             "text": "6",
-                                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=50&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAO'}",
+                                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=50&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAO",
                                                                                             "children": [
                                                                                                 {
                                                                                                     "tag": "span",
@@ -10131,7 +10131,7 @@
                                                                                                 ]
                                                                                             },
                                                                                             "text": "7",
-                                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=60&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAQ'}",
+                                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=60&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8tMDegQIBBAQ",
                                                                                             "children": [
                                                                                                 {
                                                                                                     "tag": "span",
@@ -10168,7 +10168,7 @@
                                                                                                 "id": "pnnext"
                                                                                             },
                                                                                             "text": "Next",
-                                                                                            "link": "{'https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=10&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8NMDegQIBBAS'}",
+                                                                                            "link": "https://www.google.com/search?q=Marc+Bolan+Stoke+Newington&ei=S3e1ZIPBNeSjkdUPxIGZiAg&start=10&sa=N&ved=2ahUKEwjDksacn5aAAxXkUaQEHcRABoEQ8NMDegQIBBAS",
                                                                                             "children": [
                                                                                                 {
                                                                                                     "tag": "span",
@@ -10673,7 +10673,7 @@
                                                                                         ]
                                                                                     },
                                                                                     "text": "Help",
-                                                                                    "link": "{'https://support.google.com/websearch/?p=ws_results_help&hl=en-GB&fg=1'}",
+                                                                                    "link": "https://support.google.com/websearch/?p=ws_results_help&hl=en-GB&fg=1",
                                                                                     "children": []
                                                                                 },
                                                                                 {
@@ -10702,7 +10702,7 @@
                                                                                         ]
                                                                                     },
                                                                                     "text": "Privacy",
-                                                                                    "link": "{'https://policies.google.com/privacy?hl=en-GB&fg=1'}",
+                                                                                    "link": "https://policies.google.com/privacy?hl=en-GB&fg=1",
                                                                                     "children": []
                                                                                 },
                                                                                 {
@@ -10715,7 +10715,7 @@
                                                                                         ]
                                                                                     },
                                                                                     "text": "Terms",
-                                                                                    "link": "{'https://policies.google.com/terms?hl=en-GB&fg=1'}",
+                                                                                    "link": "https://policies.google.com/terms?hl=en-GB&fg=1",
                                                                                     "children": []
                                                                                 }
                                                                             ]

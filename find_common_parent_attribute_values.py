@@ -1,6 +1,6 @@
 import json
 
-# claude second try
+# claude second try ***THIS IS WRONG***
 
 # Page structure JSON
 with open('page_structure.json') as f:
