@@ -1,5 +1,7 @@
 import json
 
+# first try with claude
+
 # Input JSON data
 page_structure_json = ""  # JSON data for page structure
 text_examples_json = ""  # JSON data for text examples
