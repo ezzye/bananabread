@@ -840,5 +840,6 @@ Example output showing attribute values for title, link and text
 Write script to make and analyse page structure, find scape classes for data and data units and then scrape page
 and test if correct.  If not correct use another earlier or later attribute value from the stack until correct.
 
-
+Tasks:
+- update get page structure script to save link as text
 
