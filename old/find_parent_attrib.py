@@ -57,13 +57,13 @@ def find_common_parents(page_structure, units_data):
 
 
 if __name__ == "__main__":
-    with open("webpage_content.json", "r") as file:
+    with open("../webpage_content.json", "r") as file:
         page_structure = json.load(file)
 
-    with open("units_data.json", "r") as file:
+    with open("../units_data.json", "r") as file:
         units_data = json.load(file)
 
     common_parent_attributes = find_common_parents(page_structure, units_data)
 
-    with open("output.json", "w") as file:
+    with open("../output.json", "w") as file:
         json.dump(common_parent_attributes, file)

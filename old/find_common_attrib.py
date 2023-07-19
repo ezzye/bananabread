@@ -54,7 +54,7 @@ def parse_page_structure(json_structure, data_units):
         output["attributes"]["link"] = recursive_search(page_structure, stack, title, link, text)
         output["attributes"]["text"] = recursive_search(page_structure, stack, title, link, text)
 
-    with open('output.json', 'w') as json_file:
+    with open('../output.json', 'w') as json_file:
         json.dump(output, json_file)
 
 

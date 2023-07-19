@@ -61,7 +61,10 @@ def get_element_dict(element, visited=None):
         seen_text = None
 
     if element.tag in ['a']:
-        element_link = element.absolute_links
+        if len(element.absolute_links) > 0:
+            element_link = element.absolute_links.pop()
+        else:
+            element_link = None
     else:
         element_link = None
 
@@ -77,7 +80,7 @@ def get_element_dict(element, visited=None):
         'tag': element.tag,
         'attributes': attributes,
         'text': seen_text,
-        'link': str(element_link),
+        'link': element_link,
         'children': children_dicts
     }
 
