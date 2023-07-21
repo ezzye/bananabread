@@ -1,0 +1,50 @@
+{
+  "data_units_example": [
+    {
+      "title": "Marc Bolan - N16",
+      "link": "https://www.londonremembers.com/memorials/marc-bolan-n16",
+      "text": "This is the penultimate house in the terrace before Maury Road, to the left."
+    },
+    {
+      "title": "Marc Bolan's London House in Hackney: The Early Years",
+      "link": "https://www.hangerlondon.com/marc-bolan-london",
+      "text": "born Mark Feld on 30/9/1947 grew up in London's"
+    }
+  ],
+  "example_descriptions": {
+    "data_unit": "A data unit should have a title, link and text.  It is a single unit of information.",
+    "title": "Title of web page or article.  It is normally short and descriptive.",
+    "link": "An absolute web link to a page",
+    "text": "A short description of the page or article.  It is normally a sentence or two."
+  },
+  "include_tags": {
+      "data_unit": "",
+      "title": "",
+      "link": "",
+      "text": ""
+    },
+  "exclude_tags": {
+      "data_unit": "",
+      "title":  "",
+      "link": "",
+      "text": ""
+    },
+  "pop_stack_increments": {
+    "data_unit": -1,
+    "title":  -1,
+    "link": -1,
+    "text": -1
+  },
+  "pop_stack_start": {
+    "data_unit": -3,
+    "title":  -1,
+    "link": -1,
+    "text": -1
+  },
+  "target_percentage": {
+    "data_unit": 100,
+    "title":  100,
+    "link": 100,
+    "text": 100
+  }
+}

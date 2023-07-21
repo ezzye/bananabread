@@ -67,7 +67,7 @@ def save_file(data, json_file_path):
 
 
 # Load the data units
-data_units = load_file("data_unit.json")
+data_units = load_file("banana/data_unit.json")
 
 # Convert the data_units into a set for efficient search
 data_units_set_title = set()
@@ -79,9 +79,9 @@ for data_unit in data_units:
     data_units_set_text.add(data_unit["text"])
 
 # Load the page structure
-page_structure = load_file("webpage_content.json")
+page_structure = load_file("banana/webpage_content.json")
 
 # Start the DFS
 dfs(page_structure)
 
-save_file(common_parent_attributes, "common_parent_attributes.json")
+save_file(common_parent_attributes, "banana/common_parent_attributes.json")

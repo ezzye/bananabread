@@ -57,7 +57,7 @@ def find_common_parents(page_structure, units_data):
 
 
 if __name__ == "__main__":
-    with open("../webpage_content.json", "r") as file:
+    with open("../banana/webpage_content.json", "r") as file:
         page_structure = json.load(file)
 
     with open("../units_data.json", "r") as file:
