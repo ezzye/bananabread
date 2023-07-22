@@ -11,7 +11,7 @@ success = 0
 
 # Define a dictionary for storing the common parent attributes
 common_parent_attributes = {
-    "data unit item including title link text": [],
+    "data_unit": [],
     "title": [],
     "link": [],
     "text": []
@@ -49,7 +49,7 @@ def dfs(node):
         # for _ in node["attributes"]["class"]:
         attributes_stack.pop()
         if success == 3:
-            common_parent_attributes["data unit item including title link text"].append(attributes_stack[-3])
+            common_parent_attributes["data_unit"].append(attributes_stack[-3])
             success = 0
 
 

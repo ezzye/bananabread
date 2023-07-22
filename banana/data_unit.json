@@ -1,4 +1,6 @@
 {
+  "explanation": "This is an example of a data unit which is used to scape data from a web page. It has an example data units each consisting of data items that can be scraped from example page at example url, a description of each example item and data unit. It also contains scraping instructions such as which html tags to be included or excluded and attribute stack initial and increment information.  It also has a target success percentage for the data unit and each item.",
+  "example_url": "https://www.google.com/search?q=example+web+page&oq=example+web+page&aqs=chrome..69i57j0l7.2877j0j7&sourceid=chrome&ie=UTF-8",
   "data_units_example": [
     {
       "title": "Marc Bolan - N16",
@@ -18,32 +20,32 @@
     "text": "A short description of the page or article.  It is normally a sentence or two."
   },
   "include_tags": {
-      "data_unit": "",
-      "title": "",
-      "link": "",
-      "text": ""
-    },
+    "data_unit": "",
+    "title": "",
+    "link": "",
+    "text": ""
+  },
   "exclude_tags": {
-      "data_unit": "",
-      "title":  "",
-      "link": "",
-      "text": ""
-    },
-  "pop_stack_increments": {
+    "data_unit": "",
+    "title": "",
+    "link": "",
+    "text": ""
+  },
+  "pop_stack_increment": {
     "data_unit": -1,
-    "title":  -1,
+    "title": -1,
     "link": -1,
     "text": -1
   },
-  "pop_stack_start": {
+  "pop_stack_initial": {
     "data_unit": -3,
-    "title":  -1,
+    "title": -1,
     "link": -1,
     "text": -1
   },
   "target_percentage": {
     "data_unit": 100,
-    "title":  100,
+    "title": 100,
     "link": 100,
     "text": 100
   }
