@@ -1,4 +1,4 @@
-# Banana-bread
+# bananabread
 Make web data useful for life and therefore pass modern turing test see https://www.youtube.com/watch?v=eJBl122rqNc and https://www.technologyreview.com/2023/07/14/1076296/mustafa-suleyman-my-new-turing-test-would-see-if-ai-can-make-1-million/
 
 ## Outline
