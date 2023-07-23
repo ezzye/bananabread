@@ -141,7 +141,6 @@ def find_most_matching_dict(checking_dict, dict_list):
         print(f"max_matches {max_matches} not sure if this the location you want")
         most_matching_dict = None
 
-    # print(f"max_matches {max_matches}")
 
     return most_matching_dict
 
@@ -213,7 +212,6 @@ response = openai.ChatCompletion.create(
     functions=function_descriptions,
     function_call="auto",
 )
-# print(f"response {response}")
 
 ai_response_message = response["choices"][0]["message"]
 
@@ -223,8 +221,6 @@ latitude_longitude_json = get_latitude_longitude(location_details_dict['name'])
 
 most_matching_result = find_most_matching_dict(location_details_dict, latitude_longitude_json['results'])
 
-# print(f"latitude_longitude_json {latitude_longitude_json}")
-# print(f"most_matching_result {most_matching_result}")
 latitude = most_matching_result['latitude']
 longitude = most_matching_result['longitude']
 
@@ -240,11 +236,9 @@ response = openai.ChatCompletion.create(
     function_call="auto",
 )
 
-# print(f"response {response}")
 ai_response_message2 = response["choices"][0]["message"]
 latitude_num = eval(ai_response_message2['function_call']['arguments']).get("latitude")
 longitude_num = eval(ai_response_message2['function_call']['arguments']).get("longitude")
-# print(f"latitude_num {latitude_num} longitude_num {longitude_num}")
 
 weather_json = get_weather(latitude_num, longitude_num)
 
