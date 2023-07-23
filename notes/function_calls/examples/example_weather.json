@@ -1,0 +1,153 @@
+{
+  "latitude": 51.56,
+  "longitude": -0.08000016,
+  "generationtime_ms": 0.9769201278686523,
+  "utc_offset_seconds": 3600,
+  "timezone": "Europe/London",
+  "timezone_abbreviation": "BST",
+  "elevation": 30.0,
+  "daily_units": {
+    "time": "iso8601",
+    "temperature_2m_max": "°C",
+    "temperature_2m_min": "°C",
+    "sunrise": "iso8601",
+    "sunset": "iso8601",
+    "uv_index_max": "",
+    "precipitation_sum": "mm",
+    "rain_sum": "mm",
+    "showers_sum": "mm",
+    "precipitation_hours": "h",
+    "precipitation_probability_max": "%",
+    "windspeed_10m_max": "mp/h",
+    "windgusts_10m_max": "mp/h",
+    "winddirection_10m_dominant": "°"
+  },
+  "daily": {
+    "time": [
+      "2023-07-22",
+      "2023-07-23",
+      "2023-07-24",
+      "2023-07-25",
+      "2023-07-26",
+      "2023-07-27",
+      "2023-07-28"
+    ],
+    "temperature_2m_max": [
+      17.9,
+      23.4,
+      19.1,
+      21.0,
+      22.0,
+      23.3,
+      22.1
+    ],
+    "temperature_2m_min": [
+      13.0,
+      16.1,
+      14.2,
+      11.4,
+      11.3,
+      16.5,
+      14.8
+    ],
+    "sunrise": [
+      "2023-07-22T05:09",
+      "2023-07-23T05:10",
+      "2023-07-24T05:12",
+      "2023-07-25T05:13",
+      "2023-07-26T05:14",
+      "2023-07-27T05:16",
+      "2023-07-28T05:17"
+    ],
+    "sunset": [
+      "2023-07-22T21:04",
+      "2023-07-23T21:02",
+      "2023-07-24T21:01",
+      "2023-07-25T21:00",
+      "2023-07-26T20:58",
+      "2023-07-27T20:57",
+      "2023-07-28T20:55"
+    ],
+    "uv_index_max": [
+      3.75,
+      4.65,
+      4.10,
+      5.15,
+      6.55,
+      1.90,
+      6.15
+    ],
+    "precipitation_sum": [
+      14.30,
+      3.90,
+      1.10,
+      0.10,
+      5.40,
+      3.90,
+      0.00
+    ],
+    "rain_sum": [
+      14.30,
+      3.90,
+      1.10,
+      0.00,
+      5.40,
+      3.30,
+      0.00
+    ],
+    "showers_sum": [
+      0.00,
+      0.00,
+      0.00,
+      0.10,
+      0.00,
+      0.60,
+      0.00
+    ],
+    "precipitation_hours": [
+      13.0,
+      3.0,
+      5.0,
+      1.0,
+      7.0,
+      5.0,
+      0.0
+    ],
+    "precipitation_probability_max": [
+      94,
+      100,
+      58,
+      19,
+      32,
+      58,
+      42
+    ],
+    "windspeed_10m_max": [
+      12.5,
+      12.9,
+      12.2,
+      8.8,
+      11.3,
+      13.7,
+      11.4
+    ],
+    "windgusts_10m_max": [
+      33.8,
+      28.6,
+      27.5,
+      23.0,
+      28.2,
+      33.1,
+      27.1
+    ],
+    "winddirection_10m_dominant": [
+      216,
+      226,
+      332,
+      303,
+      224,
+      243,
+      238
+    ]
+  }
+}
