@@ -15,12 +15,16 @@ load_dotenv()
 openai.api_key = os.getenv('OPENAI_API_KEY', 'YourAPIKeyIfNotSet')
 
 
-def get_url(loc, language="en", form="json"):
+def get_lat_long_url(loc, language="en", form="json"):
     place = loc.replace(" ", "+")
     return f"https://geocoding-api.open-meteo.com/v1/search?name={place}&count=10&language={language}&format={form}"
 
 
-def get_request(url):
+def get_weather_url(lat, long):
+    return f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={long}&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_sum,rain_sum,showers_sum,precipitation_hours,precipitation_probability_max,windspeed_10m_max,windgusts_10m_max,winddirection_10m_dominant&windspeed_unit=mph&timezone=Europe%2FLondon"
+
+
+def get_request(url, sesh=False):
     headers = {
         'Connection': 'keep-alive',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
@@ -31,11 +35,12 @@ def get_request(url):
     }
     web_response = None  # Initialize web_response to None
     try:
-        session = HTMLSession()
-        # web_response = session.get(url, headers=headers)
-        web_response = requests.get(url, headers=headers)
-
-        # session.close()
+        if sesh:
+            session = HTMLSession()
+            web_response = session.get(url, headers=headers)
+            session.close()
+        else:
+            web_response = requests.get(url, headers=headers)
 
     except requests.exceptions.RequestException as e:
         print(e)
@@ -44,27 +49,25 @@ def get_request(url):
 
 def get_latitude_longitude(location):
     """Get the current lat and longitude for a given location name"""
-    url = get_url(location)
-    lat_json = get_request(url)
-    return lat_json.json()
+    url = get_lat_long_url(location)
+    lat_json = get_request(url).json()
+    return lat_json
 
 
-def find_most_matching_dict(checking_dict, dict_list):
-    max_matches = 0
-    most_matching_dict = None
+def get_weather(lati, longi, sesh=False):
+    url = get_weather_url(lati, longi)
+    request_result = get_request(url)
+    return request_result.json()
 
-    for d in dict_list:
-        matches = sum(k in checking_dict and checking_dict[k] == v for k, v in d.items())
-        if matches > max_matches:
-            max_matches = matches
-            most_matching_dict = d
-    if max_matches < 2:
-        print(f"max_matches {max_matches} not sure if this the location you want")
-        most_matching_dict = None
 
-    print(f"max_matches {max_matches}")
+def make_location_dict():
+    keys = ["name", "country", "admin3", "admin2", "admin1"]
+    args = eval(ai_response_message['function_call']['arguments'])
+    return {key: args.get(key, None) for key in keys}
 
-    return most_matching_dict
+
+def make_location_name_string(location_dict):
+    return ", ".join([v for k, v in location_dict.items() if v is not None])
 
 
 # APIs for weather see https://open-meteo.com/en/docs eg
@@ -125,6 +128,24 @@ def find_most_matching_dict(checking_dict, dict_list):
 #     "generationtime_ms": 0.6699562
 # }
 
+def find_most_matching_dict(checking_dict, dict_list):
+    max_matches = 0
+    most_matching_dict = None
+
+    for d in dict_list:
+        matches = sum(k in checking_dict and checking_dict[k] == v for k, v in d.items())
+        if matches > max_matches:
+            max_matches = matches
+            most_matching_dict = d
+    if max_matches < 2:
+        print(f"max_matches {max_matches} not sure if this the location you want")
+        most_matching_dict = None
+
+    # print(f"max_matches {max_matches}")
+
+    return most_matching_dict
+
+
 function_descriptions = [
     {
         "name": "get_current_latitude_and_longitude",
@@ -183,7 +204,6 @@ function_descriptions = [
 ]
 
 user_query = "What's the weather like in Dalston, Hackney, London UK?"
-
 response = openai.ChatCompletion.create(
     model="gpt-4-0613",
 
@@ -193,15 +213,9 @@ response = openai.ChatCompletion.create(
     functions=function_descriptions,
     function_call="auto",
 )
-print(f"response {response}")
+# print(f"response {response}")
+
 ai_response_message = response["choices"][0]["message"]
-
-
-def make_location_dict():
-    keys = ["name", "country", "admin3", "admin2", "admin1"]
-    args = eval(ai_response_message['function_call']['arguments'])
-    return {key: args.get(key, None) for key in keys}
-
 
 location_details_dict = make_location_dict()
 
@@ -209,22 +223,46 @@ latitude_longitude_json = get_latitude_longitude(location_details_dict['name'])
 
 most_matching_result = find_most_matching_dict(location_details_dict, latitude_longitude_json['results'])
 
-print(f"latitude_longitude_json {latitude_longitude_json}")
-print(f"most_matching_result {most_matching_result}")
-# latitude = latitude_longitude_json['results'][0]['latitude']
-# longitude = latitude_longitude_json['results'][0]['longitude']
-#
-# user_query = f"What's the weather like at lattitude {latitude} and longitude {longitude}?"
-# response = openai.ChatCompletion.create(
-#     model="gpt-4-0613",
-#
-#     # This is the chat message from the user
-#     messages=[{"role": "user", "content": user_query}],
-#
-#     functions=function_descriptions,
-#     function_call="auto",
-# )
+# print(f"latitude_longitude_json {latitude_longitude_json}")
+# print(f"most_matching_result {most_matching_result}")
+latitude = most_matching_result['latitude']
+longitude = most_matching_result['longitude']
+
+user_query = f"What's the weather like at lattitude {latitude} and longitude {longitude}?"
+
+response = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo-0613",
+
+    # This is the chat message from the user
+    messages=[{"role": "user", "content": user_query}],
+
+    functions=function_descriptions,
+    function_call="auto",
+)
+
 # print(f"response {response}")
-# ai_response_message = response["choices"][0]["message"]
-# latitude_num = eval(ai_response_message['function_call']['arguments']).get("latitude")
-# longitude_num = eval(ai_response_message['function_call']['arguments']).get("longitude")
+ai_response_message2 = response["choices"][0]["message"]
+latitude_num = eval(ai_response_message2['function_call']['arguments']).get("latitude")
+longitude_num = eval(ai_response_message2['function_call']['arguments']).get("longitude")
+# print(f"latitude_num {latitude_num} longitude_num {longitude_num}")
+
+weather_json = get_weather(latitude_num, longitude_num)
+
+temperature_2m_max = weather_json['daily']['temperature_2m_max'][0]
+temperature_2m_min = weather_json['daily']['temperature_2m_min'][0]
+sunrise = weather_json['daily']['sunrise'][0]
+sunset = weather_json['daily']['sunset'][0]
+uv_index_max = weather_json['daily']['uv_index_max'][0]
+precipitation_sum = weather_json['daily']['precipitation_sum'][0]
+rain_sum = weather_json['daily']['rain_sum'][0]
+showers_sum = weather_json['daily']['showers_sum'][0]
+precipitation_hours = weather_json['daily']['precipitation_hours'][0]
+precipitation_probability_max = weather_json['daily']['precipitation_probability_max'][0]
+windspeed_10m_max = weather_json['daily']['windspeed_10m_max'][0]
+
+print()
+print()
+print(f"The weather for: {make_location_name_string(location_details_dict)}")
+print(f"latitude {latitude_num} longitude {longitude_num}")
+print("-----------------------------------------------------------------------")
+print(f"temperature_2m_max {temperature_2m_max}°C \ntemperature_2m_min {temperature_2m_min}°C \n\nsunrise {sunrise} \nsunset {sunset} \n\nuv_index_max {uv_index_max} \n\nprecipitation_sum {precipitation_sum}mm \nrain_sum {rain_sum}mm \nshowers_sum {showers_sum}mm \nprecipitation_hours {precipitation_hours}h \nprecipitation_probability_max {precipitation_probability_max}% \n\nwindspeed_10m_max {windspeed_10m_max} mp/h")
